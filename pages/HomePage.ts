@@ -7,7 +7,7 @@ import { ResultsPage } from '../pages/ResultsPage';
 export class HomePage{
 
     //1. page locators/objects/OR:
-    private readonly page: Page;
+     readonly page: Page;
     private readonly eleUtil: ElementUtil;
     private readonly loginLink: Locator;
     private readonly logoutLink: Locator;

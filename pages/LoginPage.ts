@@ -1,6 +1,8 @@
 import { Locator, Page } from '@playwright/test';
 import { ElementUtil } from '../utils/ElementUtil';
 import { HomePage } from '../pages/HomePage';
+import { RegisterPage } from '../pages/RegisterPage';
+
 
 
 export class LoginPage{
@@ -12,6 +14,7 @@ export class LoginPage{
     private readonly pasword: Locator;
     private readonly loginBtn: string;
     private readonly warningMsg: Locator;
+    private readonly registerlink: Locator;
 
     //2. page class constructor...
     constructor(page: Page) {
@@ -21,14 +24,15 @@ export class LoginPage{
         this.pasword = page.getByRole('textbox', { name: 'Password' });
         this.loginBtn = `input[type="submit"][value="Login"]`;
         this.warningMsg = page.locator('.alert.alert-danger.alert-dismissible');
+        this.registerlink = page.getByText('Register', { exact: true });
     }
 
     //3. page actions/methods:
     /**
      * navigate to the login page
      */
-    async goToLoginPage() {
-        await this.page.goto('https://naveenautomationlabs.com/opencart/index.php?route=account/login');
+    async goToLoginPage(baseURL: string | undefined) {
+        await this.page.goto(baseURL+'?route=account/login');
     }
 
     /**
@@ -53,6 +57,13 @@ export class LoginPage{
         console.log('invalid login warning message: ' + errorMesg);
         return errorMesg;
     }
+
+    async navigateToRegisterPage(): Promise<RegisterPage> {
+        await this.eleUtil.click(this.registerlink, { force: true }, 1);
+        return new RegisterPage(this.page);
+    }
+
+
 
 
 }

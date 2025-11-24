@@ -10,3 +10,14 @@ npx allure generate allure-results --clean -o allure-report
 
  //open allure report
  npx allure open allure-report
+
+
+ //to install csv parser 
+ npm install csv-parse
+ npm install csv-parse/sync
+
+ //install custom playwright html reporter
+ npm i -D playwright-html-reporter
+
+ //run scripts commands mentioned in package.json file
+ npm run test:qa 

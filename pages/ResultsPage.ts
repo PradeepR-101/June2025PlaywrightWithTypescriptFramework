@@ -1,8 +1,6 @@
 import { Locator, Page } from '@playwright/test';
 import { ElementUtil } from '../utils/ElementUtil';
-import { LoginPage } from '../pages/LoginPage';
-
-
+import { ProductInfoPage } from '../pages/ProductInfoPage';
 
 export class ResultsPage{
 
@@ -25,6 +23,12 @@ export class ResultsPage{
         return await this.results.count();
     }
     
+    async selectProduct(productName: string) {
+        console.log("==========product name: ====" + productName);
+        await this.eleUtil.click(this.page.getByRole('link', { name: `${productName}` }));
+        return new ProductInfoPage(this.page);
+    }
+
     
 
 
