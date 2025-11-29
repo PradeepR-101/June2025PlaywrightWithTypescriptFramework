@@ -34,3 +34,13 @@ npx allure generate allure-results --clean -o allure-report
  //github is microsoft product now
 
  //ubuntu means linux machine
+
+ //action/checkout@v4 - these are tags in yaml file
+ //npm ci - means continous integration
+ //shell script in yaml file
+ //artifacts means reports
+ //echo - means print something on the console
+
+//2 settings
+ //1 github - goto settings - actions - general (give permission here) - workflow permission - read and write (select radio button)
+ //2 github - goto settings - pages - build and deployment - deploy from a branch (select source as deploy from a branch) - branch as master
