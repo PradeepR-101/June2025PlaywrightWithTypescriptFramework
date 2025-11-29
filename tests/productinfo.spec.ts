@@ -14,7 +14,9 @@ let search = [
 
 for (let product of search) {
 
-    test(`verify product Header ${product.productname}`, async ({  homePage }) => {        
+    //after playwright v1.32 we can add tags like this for grouping and filtering
+    //@critical, @falky, @ui, @api, @e2e, @p1, @p2, @regression, @sanity, @smoke, @login, @product
+    test(`verify product Header ${product.productname}`,{tag:['@product','@sanity','@regression']}, async ({  homePage }) => {        
 
         let resultsPage: ResultsPage = await homePage.doSearch(product.searchkey);
         
@@ -28,7 +30,7 @@ for (let product of search) {
 
 
 for (let product of search) {
-    test(`verify product Images ${product.productname} : ${product.imagecount}`, async ({ homePage }) => {
+    test(`verify product Images ${product.productname} : ${product.imagecount}`,{tag:['@product','@sanity']}, async ({ homePage }) => {
 
         let resultsPage: ResultsPage = await homePage.doSearch(product.searchkey);
         

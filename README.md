@@ -21,3 +21,16 @@ npx allure generate allure-results --clean -o allure-report
 
  //run scripts commands mentioned in package.json file
  npm run test:qa 
+
+ //right clickon index.html under playwright-report folde r then copy path then paste it in google to see the report
+
+//playwright doc - search for tag - clickon tags test
+ //--grep "@sanity|@smoke" => test should have atlest sanity or smoke then those testcases will execute,
+ //--grep "@sanity" --grep "@smoke" => tests should have both sanity and smoke tags in testcase name or in tag 
+ //npx playwright test --grep "(?=.*@fast)(?=.*@slow)" => tests should have both sanity and smoke tags in testcase name or in tag 
+
+ //if folders are greyed out then those folders added in .gitignore file 
+
+ //github is microsoft product now
+
+ //ubuntu means linux machine
