@@ -48,7 +48,9 @@ npx allure generate allure-results --clean -o allure-report
 
 
 
- //
+ //once gh-pages generated after first successful execution chnage below settings
+ //3 github - goto settings - pages - build and deployment - deploy from a branch (select source as deploy from a branch) - branch as gh-pages
+ //then click on the reports in readme file to check the reports
 
 
 
