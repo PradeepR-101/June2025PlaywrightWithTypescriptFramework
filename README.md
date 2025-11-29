@@ -44,3 +44,4 @@ npx allure generate allure-results --clean -o allure-report
 //2 settings
  //1 github - goto settings - actions - general (give permission here) - workflow permission - read and write (select radio button)
  //2 github - goto settings - pages - build and deployment - deploy from a branch (select source as deploy from a branch) - branch as master
+ //modified
