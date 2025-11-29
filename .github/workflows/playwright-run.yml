@@ -1,4 +1,4 @@
-name: Playwright & Allure Reports1
+name: Playwright & Allure Reports
 
 on:
   workflow_dispatch:
