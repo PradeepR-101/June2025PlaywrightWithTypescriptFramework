@@ -70,9 +70,9 @@ Welcome to the **June2025PWFramework** automation project. Below you can find th
 
 Click the badges below to view the latest reports published via GitHub Pages:
 
-[![Playwright Report](https://img.shields.io/badge/Playwright-Report-blue)](https://github.com/PradeepR-101/June2025PlaywrightWithTypescriptFramework/playwright-report/index.html)
-[![Playwright HTML Reporter](https://img.shields.io/badge/Playwright_HTML-Report-green)](https://github.com/PradeepR-101/June2025PlaywrightWithTypescriptFramework/playwright-html-report/index.html)
-[![Allure Report](https://img.shields.io/badge/Allure-Report-red)](https://github.com/PradeepR-101/June2025PlaywrightWithTypescriptFramework/allure-report/index.html)
+[![Playwright Report](https://img.shields.io/badge/Playwright-Report-blue)](https://PradeepR-101.github.io/June2025PlaywrightWithTypescriptFramework/playwright-report/index.html)
+[![Playwright HTML Reporter](https://img.shields.io/badge/Playwright_HTML-Report-green)](https://PradeepR-101.github.io/June2025PlaywrightWithTypescriptFramework/playwright-html-report/index.html)
+[![Allure Report](https://img.shields.io/badge/Allure-Report-red)](https://PradeepR-101.github.io/June2025PlaywrightWithTypescriptFramework/allure-report/index.html)
 
 ---
 
