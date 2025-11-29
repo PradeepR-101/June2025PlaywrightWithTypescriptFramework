@@ -43,14 +43,14 @@ npx allure generate allure-results --clean -o allure-report
 
 //2 settings
  //1 github - goto settings - actions - general (give permission here) - workflow permission - read and write (select radio button)
- //2 github - goto settings - pages - build and deployment - deploy from a branch (select source as deploy from a branch) - branch as master
- //modified
+ //2 github - goto settings - pages - build and deployment - deploy from a branch (select source as deploy from a branch) - branch as master then save
+ //add workflow file and push the chnages for auto trigger
 
 
-
- //once gh-pages generated after first successful execution chnage below settings
- //3 github - goto settings - pages - build and deployment - deploy from a branch (select source as deploy from a branch) - branch as gh-pages
- //then click on the reports in readme file to check the reports
+ //once gh-pages generated after first successful execution change below settings
+ //3 github - goto settings - pages - build and deployment - deploy from a branch (select source as deploy from a branch) - branch as gh-pages then save
+ //then click on the reports in readme file to check the reports (this will work only if we added below readme content in readme file)
+ //open publish reports (job section) - report urls (step) - click on urls
 
 
 
