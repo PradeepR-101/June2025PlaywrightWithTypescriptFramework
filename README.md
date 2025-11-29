@@ -52,7 +52,9 @@ npx allure generate allure-results --clean -o allure-report
  //then click on the reports in readme file to check the reports (this will work only if we added below readme content in readme file)
  //open publish reports (job section) - report urls (step) - click on urls
 
-
+//in workflow files also we can use shortcuts using npm command for running tests
+//run: npx playwright test tests/loginpage.spec.ts --config=playwright.config.ts
+//run: npm run test:qa
 
 
 
