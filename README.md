@@ -1,4 +1,6 @@
-
+//install extension in vs code
+//playwright test runner (sakamoto66)(Run Debug Inspect)
+//playwright test for vs code (Run green icon before test) 
 
 //install allure
 npm install --save-dev allure-playwright allure-commandline
@@ -15,6 +17,11 @@ npx allure generate allure-results --clean -o allure-report
  //to install csv parser 
  npm install csv-parse
  npm install csv-parse/sync
+
+ //api
+ npm install jsonpath-plus (or) npm i jsonpath-plus - json path validation similar to jayway json path lib
+ npm install ajv - schema validation
+
 
  //install custom playwright html reporter
  npm i -D playwright-html-reporter
@@ -56,6 +63,8 @@ npx allure generate allure-results --clean -o allure-report
 //run: npx playwright test tests/loginpage.spec.ts --config=playwright.config.ts
 //run: npm run test:qa
 
+
+//check with IT team or devops team to get the mail hosting server (SMTP server) url and port
 
 
  # PWFWDemo Automation Reports
