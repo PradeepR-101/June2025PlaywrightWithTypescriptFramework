@@ -1,3 +1,9 @@
+//task manager
+kill the non working apps to manage CPU utilization
+kill the app if it is not working sometime then open again
+
+//npx playwright test tests/loginpage.spec.ts --ui
+
 //debugging in vs code
 open terminal and then click on dropdown icon beside the + icon in top right corner in terminal and 
 then select JavaScript Debug Terminal and
