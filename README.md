@@ -1,6 +1,16 @@
-//install extension in vs code
+//debugging in vs code
+open terminal and then click on dropdown icon beside the + icon in top right corner in terminal and 
+then select JavaScript Debug Terminal and
+then run command (npx playwright test tests/loginpage.spec.ts --headed) for debug
+
+//playwright debug option
+npx playwright test tests/loginpage.spec.ts --headed --debug
+
+//install extension in vs code and the run and debug
 //playwright test runner (sakamoto66)(Run Debug Inspect)
 //playwright test for vs code (Run green icon before test) 
+
+//debug by adding launch.json under .vscode folder
 
 //install allure
 npm install --save-dev allure-playwright allure-commandline
